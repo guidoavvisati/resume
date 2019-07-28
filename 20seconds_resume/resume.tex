@@ -1,162 +1,146 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Twenty Seconds Resume/CV
-% LaTeX Template
-% Version 1.0 (14/7/16)
-%
-% Original author:
-% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
-% Vel (vel@LaTeXTemplates.com) and Harsh (harsh.gadgil@gmail.com)
-%
-% License:
-% The MIT License (see included LICENSE file)
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%----------------------------------------------------------------------------------------
-
-\documentclass[letterpaper]{twentysecondcv} % a4paper for A4
-
-% Command for printing skill overview bubbles
-\newcommand\skills{ 
-~
-	\smartdiagram[bubble diagram]{
-        \textbf{Data}\\\textbf{Engineering},
-        \textbf{Full Stack}\\\textbf{Dev},
-        \textbf{~~~~~~~~OOP~~~~~~~~~},
-        \textbf{~~~~~~Machine~~~~~~}\\\textbf{~~Learning~~},
-        \textbf{~~~~~DevOps~~~~~}
-    }
-}
-
-% Programming skill bars
-\programming{{C $\textbullet$ C++  $\textbullet$ R / 3}, {JavaScript $\textbullet$ SQL $\textbullet$ \large \LaTeX / 3.5}, {Scala $\textbullet$ Java $\textbullet$ Python / 5}}
-
-% Projects text
-\education{
-\textbf{MSc., Computer Science} (GPA: 3.7) \\
-Specialization: Data Mining \\
-University of Guelph \\
-2015 - 2017 | Guelph, Canada
-
-\textbf{BEng., Computer Engineering} (GPA: 4.0) \\
-University of Pune \\
-2009 - 2013 | Pune, India
-}
-
-%----------------------------------------------------------------------------------------
-%	 PERSONAL INFORMATION
-%----------------------------------------------------------------------------------------
-% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
-
-\cvname{HARSH GADGIL} % Your name
-\cvjobtitle{ Data Engineer } % Job
-% title/career
-
-\cvlinkedin{/in/hsgadgil}
-\cvgithub{opensorceror}
-\cvnumberphone{(647) 221 7999} % Phone number
-\cvsite{hgadgil.com} % Personal website
-\cvmail{harsh.gadgil@gmail.com} % Email address
-
-%----------------------------------------------------------------------------------------
-
+\documentclass[]{twentysecondcv}
+ 
 \begin{document}
 
-\makeprofile % Print the sidebar
- 
-%----------------------------------------------------------------------------------------
-%	 EXPERIENCE
-%----------------------------------------------------------------------------------------
+%%%%%%%%%%%%%%%%%
+%%PROFILE SIDE BAR%%
+%%%%%%%%%%%%%%%%%
 
-\section{Experience}
+%%%%%%%%%%%%%%%%
+%%PERSONAL INFO%%%
+%%%%%%%%%%%%%%%%
 
-\begin{twenty} % Environment for a list with descriptions
-\twentyitem
-    	{April 2017 -}
-		{Present}
-        {Machine Learning Engineer}
-        {\href{http://www.bell.ca/}{Bell}}
-        {}
-        {\begin{itemize}
-        \item Focused on developing machine learning models, production deployment, testing, scaling
-        \item Projects: SMS spam detection, Robocall detection 
-        
-        Tools: Kafka, Flume, Spark, Hive, Solr, Jupyter Lab, Kubernetes, Docker, GitLab CI / CD
-        
-        Awards: Merit Gold (3x), Merit Platinum (2x)
-        \item Helped pioneer automated deployments of data pipelines using CI / CD, enabling faster and more portable deployments
-        \item Presented several talks on Machine Learning and Big Data at university hackathons and Bell internal conferences
-        \item Conducted interviews for junior and senior data engineering roles
-        \end{itemize}}
-        \\
-	\twentyitem
-    	{Sep 2015 -}
-		{May 2016}
-        {Co-founder \& Full Stack Developer}
-        {\href{http://www.localxchange.ca/}{LocalXChange Inc.}}
-        {}
-        {
-        {\begin{itemize}
-        \item In a team of 2, raised \$8,000 in funding from The Hub incubator at the University of Guelph, to develop a hyperlocal content platform, aimed at delivering local news and events to local users in realtime
-        \item In a team of 3, built hybrid mobile \& web apps with Ionic, Angular.js and MongoDB, surpassing 1,000 users within a month since launch
-        \item Met with the Mayor of Guelph and University of Guelph officials to discuss how the app can help boost Guelph Tourism 
-    \end{itemize}}
-        }
-    \\   
-    \twentyitem
-   		{Sep 2015 -}
-		{Dec 2016}
-        {Graduate Teaching Assistant}
-        {\href{http://www.uoguelph.ca}{University of Guelph}}
-        {}
-        {
-        {\begin{itemize}
-        \item TA for CIS*2430 (OOP), CIS*4150 (Software Reliability \& Testing) and CIS*3530 (Database Systems \& Concepts) courses
-        \item Delivered several lectures for CIS*3530 when professor was away at a conference
-    \end{itemize}}
-        }
-     \\
-     \twentyitem
-   		{Dec 2013 -}
-		{Apr 2015}
-        {Test Automation Engineer}
-        {\href{http://www.synechron.com/}{Synechron}}
-        {}
-        {
-        \begin{itemize}
-        \item Primarily developed test automation libraries using Java and C\#, scripts and CI / CD pipelines
-        \item Lead development of a Keyword Driven \& Behavior Driven test framework for \href{https://www.microsoft.com/en-ca/dynamics/crm.aspx}{Microsoft Dynamics CRM}. Earned monetary award \& client appreciation.
-        \item Demonstrated that rewriting an in-house test framework for \href{https://www.microsoft.com/en-ca/dynamics/erp-ax-overview.aspx}{Microsoft Dynamics AX}, using an open source library (White) instead of a proprietary one (Coded UI), would help the team save \$4K annually by downgrading Microsoft Visual Studio
-    \end{itemize}
-    	}
-        
-	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
-\end{twenty}
+\profilepic{alice.jpeg} %path of profile pic
+\cvname{Alice} %your name
+\cvjobtitle{Adventurer}%your actual job position
+\cvdate{26 November 1865}%date of birth
+\cvaddress{United Kingdom}%address
+\cvnumberphone{+39 0325658974}%telphone number
+\cvmail{alice@wonderland.com}%e-mail
+\cvsite{http://en.wikipedia.org}%personal site
 
-%----------------------------------------------------------------------------------------
-%	 RESEARCH
-%----------------------------------------------------------------------------------------
-\section{Research}
+
+\aboutme{
+Alice is a sensible prepubescent girl from a wealthy English family who finds herself in a strange world ruled by imagination and fantasy. Alice feels comfortable with her identity and has a strong sense that her environment is comprised of clear, logical, and consistent rules and features. Alice's familiarity with the world has led one critic to describe her as a "disembodied intellect". Alice displays great curiosity and attempts to fit her diverse experiences into a clear understanding of the world.}%About me section
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%Skill bar section, each skill must have a value between 0 an 6 (float)%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\skills{{pursuer of rabbits/5.8},{good manners/4},{outgoing/4.3},{polite/4},{Java/0.01}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%Skill text section, each skill must have a value between 0 an 6%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\skillstext{{lovely/4},{narcissistic/3}}
+
+\makeprofile
+%%%%%%%%%%%%%%%%%%%%
+%%END PROFILE SIDE BAR%%
+%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%BODY%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%
+%%SIMPLE SECTION%%%%%%
+%%%%%%%%%%%%%%%%%%%%
+\section{interests}
+The heroine and the dreamer of Wonderland;  Alice is the principal character.
+
+\section{education}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%TWENTY LIST ITEMS%%%%%%%%%%%%%%
+%%    Four arguments: date; title; where; description %%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{twenty}
-	\twentyitem
-    	{2015 - 2017}
-		{}
-        {MSc. Candidate, Graduate Research Assistant}
-        {\href{http://www.uoguelph.ca/}{University of Guelph}}
-        {}
-        {
-       	\textbf{Thesis}: Data Integration from Multiple Historical Sources to Study Canadian Casualties of WWI
-        {\begin{itemize}
-        \item Proposed a stepwise deterministic method to integrate datasets without labeled data. The method performs comparably with a method that incorporates a Support Vector Machine
-        \item Prepared a longitudinal dataset to enable comprehensive analyses about WWI Canadian society and military, seeding further research
-        \item \textbf{Tools}: R, Python, scikit-learn, pandas \vspace{2mm}
-		\end{itemize}}
-        }
+  \twentyitem
+    {since 1865}
+    {Ph.D. {\normalfont candidate in Computer Science}}
+    {Wonderland}
+    {\emph{A Quantified Theory of Social Cohesion.}}
+  \twentyitem
+    {1863-1865}
+    {M.Sc. magna cum laude}
+    {Wonderland}
+    {Majoring in Computer Science}
+  \twentyitem
+    {1861-1863}
+    {B.Sc. magna cum laude}
+    {Wonderland}
+    {Majoring in Computer Science}
+  \twentyitem
+    {1856-1861}
+    {High school}
+    {Wonderland}
+    {Specializing in mathematics and physics.}
 \end{twenty}
 
-\section{Publications}
-L. Antonie, H. Gadgil, G. Grewal, and K. Inwood, “Historical Data Integration - A Study of WWI Canadian Soldiers,” in 2016 IEEE 16th International Conference on Data Mining Workshops (ICDMW), pp. 186-193, IEEE, 2016. \vspace{2mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%TWENTY LIST SHORTITEMS%%%%%%%%%%%%%%
+%%% Two arguments: date; title/description %%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{publications}
+
+\begin{twentyshort}
+  \twentyitemshort
+    {1865}
+    {Chapter One, Down the Rabbit Hole.}
+  \twentyitemshort
+    {1865}
+    {Chapter Two, The Pool of Tears.}
+  \twentyitemshort
+    {1865}
+    {Chapter Three,  The Caucus Race and a Long Tale.}
+  \twentyitemshort
+    {1865}
+    {Chapter Four,  The Rabbit Sends a Little Bill.}
+  \twentyitemshort
+    {1865}
+    {Chapter Five,  Advice from a Caterpillar.}
+\end{twentyshort}
+
+
+
+\section{awards}
+
+\begin{twentyshort}
+  \twentyitemshort
+    {1987}
+    {All-Time Best Fantasy Novel.}
+  \twentyitemshort
+    {1998}
+    {All-Time Best Fantasy Novel before 1990.}
+\end{twentyshort}
+
+
+\section{experience}
+
+\begin{twenty}
+  \twentyitem
+    {1900}
+    {Alice in Wonderland-The Circra (1900's) Silent Film.}
+    {Film}
+    {The first Alice on film was over a hundred years ago.}
+  \twentyitem
+    {1933}
+    {Alice in Wonderland 1933 version.}
+    {Film}
+    {This film stars Ethel griffies and Charlotte Henry. It was a box office flop when it was released.}
+\twentyitem
+    {1951}
+    {Disney Film.}
+    {Film}
+    {Walt Disney brings Lewis Carroll's fantasy story to life in this well done animated classic. Even though many elements from the book were dropped, such as the duchess with the baby pig and mock turtle, this version is without a doubt the most famous Alice adaption made.}
+
+\end{twenty}
+\section{other information}
+Alice approaches Wonderland as an anthropologist, but maintains a strong sense of noblesse oblige that comes with her class status. She has confidence in her social position, education, and the Victorian virtue of good manners. Alice has a feeling of entitlement, particularly when comparing herself to Mabel, whom she declares has a “poky little house,” and no toys. Additionally, she flaunts her limited information base with anyone who will listen and becomes increasingly obsessed with the importance of good manners as she deals with the rude creatures of Wonderland. Alice maintains a superior attitude and behaves with solicitous indulgence toward those she believes are less privileged.
+
+%%%%%%%%%%%%%%%%%%%%
+%%%%%ENDBODY%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%
 
 \end{document} 
