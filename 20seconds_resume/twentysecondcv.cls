@@ -18,7 +18,6 @@
 \RequirePackage{pgffor}
 \RequirePackage{marvosym}
 \RequirePackage{parskip}
-\RequirePackage{multirow}
 
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
 \ProcessOptions\relax
@@ -42,6 +41,13 @@
 \pagestyle{empty} % Disable headers and footers
 
 \setlength{\parindent}{0pt} % Disable paragraph indentation
+
+\newcommand{\vcenteredinclude}[1]{
+	\begingroup
+		\setbox0=\hbox{\icon{#1}}% include icons centered vertically
+		\parbox{\wd0}{\box0}
+	\endgroup
+}
 
 %----------------------------------------------------------------------------------------
 %	 SIDEBAR DEFINITIONS
@@ -144,7 +150,7 @@
 			\ifthenelse{\equal{\cvaddress}{}}{}{\textsc{\Large\icon{\Letter}} & \cvaddress\\}
 			\ifthenelse{\equal{\cvnumberphone}{}}{}{\textsc{\Large\icon{\Telefon}} & \cvnumberphone\\}
 			\ifthenelse{\equal{\cvsite}{}}{}{\textsc{\Large\icon{\Mundus}} & \cvsite\\}
-			\ifthenelse{\equal{\cvmail}{}}{}{\textsc{\large\icon{@}} & \cvmail}
+			\ifthenelse{\equal{\cvmail}{}}{}{\textsc{\Large\icon{@}} & \cvmail}
 		\end{tabular}
 
 		%------------------------------------------------
