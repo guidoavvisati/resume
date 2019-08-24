@@ -18,6 +18,7 @@
 \RequirePackage{pgffor}
 \RequirePackage{marvosym}
 \RequirePackage{parskip}
+\RequirePackage{array}
 
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
 \ProcessOptions\relax
@@ -42,12 +43,6 @@
 
 \setlength{\parindent}{0pt} % Disable paragraph indentation
 
-\newcommand{\vcenteredinclude}[1]{
-	\begingroup
-		\setbox0=\hbox{\icon{#1}}% include icons centered vertically
-		\parbox{\wd0}{\box0}
-	\endgroup
-}
 
 %----------------------------------------------------------------------------------------
 %	 SIDEBAR DEFINITIONS
@@ -140,12 +135,12 @@
 
 		%------------------------------------------------
 
-		{\Large\color{black!80}\cvjobtitle}
+		{\Large\color{black!80}\cvjobtitle}			
 
 		%------------------------------------------------
 
 		\renewcommand{\arraystretch}{1.6}
-		\begin{tabular}{p{0.5cm} @{\hskip 0.5cm}p{5cm}}
+		\begin{tabular}{m{0.5cm} @{\hskip 0.5cm}m{5cm}}
 			\ifthenelse{\equal{\cvdate}{}}{}{\textsc{\Large\icon{\Info}} & \cvdate\\}
 			\ifthenelse{\equal{\cvaddress}{}}{}{\textsc{\Large\icon{\Letter}} & \cvaddress\\}
 			\ifthenelse{\equal{\cvnumberphone}{}}{}{\textsc{\Large\icon{\Telefon}} & \cvnumberphone\\}
