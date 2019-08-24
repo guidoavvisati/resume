@@ -1,54 +1,17 @@
-# Smart Fancy LaTeX CV
-LaTeX template for CV or resume with modern and smart infographic-style elements including fontawesome support.
-
-![CV Screenshot](http://www.carminebenedetto.net/_downloads/smart-fancy-latex-cv-screenshot.jpg)
-
-## Required Packages (Debian/Ubuntu instructions)
-texlive
-```
-sudo apt-get install texlive
-```
-
-texlive-xetex
-```
-sudo apt-get install texlive-xetex
-```
-
-texlive-lualatex
-```
-sudo apt-get install texlive-luatex
-```
-
-texlive-math-extra
-```
-sudo apt-get install texlive-math-extra
-```
-
-texmaker
-```
-sudo apt-get install texmaker
-```
+# Resume Collection
+I collected, modified and used few CV templates I liked out there on the internet to build my new resume. So far, in this collection you can find
+- [twentysecondscv](https://github.com/spagnuolocarmine/TwentySecondsCurriculumVitae-LaTex) by Carmine Spagnuolo
+- [smart-fancy-latex-cv](https://github.com/neoben/smart-fancy-latex-cv) by Carmine Benedetto
 
 ## Compilation
-Open cv.tex with TexMaker and compile using XeLaTeX
+Modify the .tex files with any editor and compile using pdflatex or xelatex or lualatex + bibtex if any references are needed
 
 ## Fontawesom support
-To enable fontawesome support, include the fontawesome package in the cv.tex file
+To enable fontawesome support, include the fontawesome package in the document preambol
 ```
 \usepackage{fontawesome}
 ```
 and compile the document using LuaLaTex
 
 ## Author
-Carmine Benedetto
-
-http://www.carminebenedetto.net
-
-## References
-Developed on ShareLaTeX
-
-https://www.sharelatex.com
-
-Based on Fancy CV template created by Adrien Friggeri
-
-https://www.sharelatex.com/templates/52fb8c1f33621a613683ecad
+Guido Avvisati collected and tweaked several CV templates. The templates were created by Carmine Spagnuolo, Carmine Benedetto, and [Adrien Friggeri](https://github.com/akanosora/friggeri-cv)
